@@ -13,7 +13,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/12/24/html知识点/index.html">
 <meta property="og:site_name" content="DK">
 <meta property="og:description" content="HTML、XML、XHTML 的区别 html：超文本标记语言（Hyper Text Markup Language），是最早写网页的语言，但是由于时间早，规范不是很好，大小写混写且编码不规范；xhtml：升级版的html（Extensible Hyper Text Markup Language），对html进行了规范，编码更加严谨纯洁，也是一种过渡语言，html向xml过渡的语言；xml：可扩">
-<meta property="og:updated_time" content="2017-12-24T14:51:13.786Z">
+<meta property="og:updated_time" content="2017-12-24T14:53:22.827Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="html知识点">
 <meta name="twitter:description" content="HTML、XML、XHTML 的区别 html：超文本标记语言（Hyper Text Markup Language），是最早写网页的语言，但是由于时间早，规范不是很好，大小写混写且编码不规范；xhtml：升级版的html（Extensible Hyper Text Markup Language），对html进行了规范，编码更加严谨纯洁，也是一种过渡语言，html向xml过渡的语言；xml：可扩">
@@ -52,9 +52,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Buscar"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -87,27 +87,8 @@
       
         <p>HTML、XML、XHTML 的区别</p>
 <p>html：超文本标记语言（Hyper Text Markup Language），是最早写网页的语言，但是由于时间早，规范不是很好，大小写混写且编码不规范；<br>xhtml：升级版的html（Extensible Hyper Text Markup Language），对html进行了规范，编码更加严谨纯洁，也是一种过渡语言，html向xml过渡的语言；<br>xml：可扩展标记语言（Extensible Markup Language），是一种跨平台语言，编码更自由，其标签没有被预定义，可以根据自己需求自由创建标签。主要用于存储数据和结构参考，而非显示数据。<br>总结：XHTML是HTML向XML 过度的一个桥梁。而xml是web发展的趋势。</p>
-<p>1.HTML 的版本（W3C 组织制定规范）<br>HTML 4.01<br>XHTML<br>HTML 5<br>HTML 5.1<br>HTML第一版是由李爵士创办的，W3C是由他创建的。HTML5是现在通用的，HTML5的标签在HTML4标签里面好多没有，而XHTML的标签好多标签需要闭合，如’’’<input>‘’’标签在HTML5里面是’’’<input>‘’’，在XHTML里面要写成’’’<input>‘’’。HTML5是自动包容前两种的。HTML5.1是最新发布的。<br>另外说一个知识点，H5是什么意思：能运行在微信上的网页就是H5。可以用HTML4做，也可以用HTML5做，跟技术没关系。 </p>
-<p>2.规范文档（Specifications）<br>由 W3C 写文档（李爵士）<br>W3C 根据浏览器的实际情况总结文档，并不是凭空想象<br>直接看很难看懂，全英文的，事无巨细。<br>3.DOCTYPE<br>用来选择文档类型<br>除了 HTML 5 的 DOCTYPE，其他的都 TM 很难记：<a href="https://www.w3.org/QA/2002/04/valid-dtd-list.html" target="_blank" rel="noopener">https://www.w3.org/QA/2002/04/valid-dtd-list.html</a><br>如果你没写 DOCTYPE，那你就惨了，会出现一些难以预料的bug。<br>4.html / head / body<br>5.省略标签<br>如果head标签里面没有东西,可以省略;<br>body标签里是空的或者没有注释,也可以省略;<br>6.常见标签：a、form、input、button、h1、p、ul、ol、small、strong、div、span、kbd、video、audio、svg<br>基本上，你知道标签对应单词的意思，就知道这个标签怎么用了（语义化）<br>出了 div 和 span，其他标签都有默认样式<br>MDN 上有所有标签的文档<br>7.如何查看 MDN 文档<br>Google：关键词 + MDN<br>切换成中文</p>
-<p>8.iframe 标签<br>嵌套页面:把一个页面嵌套在另一个页面中。可设置宽高。是可替换元素。</p>
-<p>‘’’<iframe src="" 'https:="" www.baidu.com'''="" name="" 'xxx'''=""></iframe></p>
-<p><iframe>的name属性与<a>一起用,name与target设置成一个名称。</a></iframe></p>
-<p><iframe> src=’’’#’’’:意思在当前页面打开。<br>src还可以写相对路径,如./index.html<br>frameborder=’’’0’’’ 入伏哦不设置默认有一个3D效果的border.’’’</iframe></p>
-<p>a href=’’’#’’’&gt;link’’’ ‘’’标签被点击后页面锚点变成#,页面滚动到顶部.页面不发起请求但会刷新.<br>‘’’<a href="" ''''="">‘’’link’’’</a> ‘’’标签被点击后页面刷新</p>
-<p>a 标签<br>跳转页面（HTTP GET 请求）<br>有4个target属性,<br>_blank 新开打开<br>_self  自己打开<br>_parent  爸爸打开<br>_top  顶级打开</p>
-<p>‘’’<a>‘’’有一个download属性可以用来下载,如果不在标签里面设置,还有一个办法可以设置Content-type:application/octet-stream<br>如果’’’<a>‘’’里面href=’’’qq.com’’’是不可以的,因为为当成一个文件.一种办法是前面要加协议http://  另一种办法是当前文件时什么协议就用什么协议 ,但是写代码一般不能用file协议,所以一般要预览html文件就要上传到github,用github的预览功能,另一种办法是下载一个小工具:http-server.这个工具帮你做一个node.js server.要进入你要打开的文件目录安装,确保是全局安装.然后运行,最后浏览器访问例如<a href="http://localhost:8081/index.html或http://localhost:8081/app.js" target="_blank" rel="noopener">http://localhost:8081/index.html或http://localhost:8081/app.js</a></a></a></p>
-<p>href写相符路径就跳转到这个相对路径.</p>
-<p>在href里面写?name=xxx,浏览器会加在当前网址后面,发起一个get请求.</p>
-<p>‘’’a href=’’’#’’’&gt;link‘’’标签被点击后页面锚点变成#,页面滚动到顶部.页面不发起请求但会刷新.</p>
-<p>javascript:; 伪协议   如果想写一个’’’<a>‘’’,点击这个’’’<a>‘’’后不想跳转,可以在href里面写javascript:;<br>属性见 MDN：<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a</a></a></a></p>
-<p>form 标签<br>跳转页面（HTTP POST 请求）</p>
-<p>属性见 MDN：<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/form" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/form</a></p>
-<p>‘’’<a>‘’’跳转页面的时候发起的是get请求(获取)<br>‘’’<form>‘’’跳转页面的时候发起的是一个post请求(上传)</form></a></p>
-<p>如果’’’<form>‘’’里面没有提交按钮,就无法提交,<br>get会把默认参数(比如用户名密码)放进查询参数里<br>post会把默认参数放在第四部分<br>可以让post也放进查询参数但是get无法放进第四部分.</form></p>
-<p>‘’’<a>‘’’有target,’’’<form>‘’’也有target,_blank也会新开页面,也能进iframe.</form></a></p>
-<p>input / button<br>区别：是否为「空标签」</p>
-<p>input 的属性见：<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/Input" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/Input</a><br>button 的属性见：<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/button" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/button</a></p>
-<p>‘’’一个<form>里面只写<button>button</button><button>,这个button会自动升级为提交按钮.<br>如果写成</button><button type="" 'button'''="">,就不是submit了;<br>这个type=submit时,也能提交.’’’</button></form></p>
+<p>1.HTML 的版本（W3C 组织制定规范）<br>HTML 4.01<br>XHTML<br>HTML 5<br>HTML 5.1<br>HTML第一版是由李爵士创办的，W3C是由他创建的。HTML5是现在通用的，HTML5的标签在HTML4标签里面好多没有，而XHTML的标签好多标签需要闭合，如<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">另外说一个知识点，H5是什么意思：能运行在微信上的网页就是H5。可以用HTML4做，也可以用HTML5做，跟技术没关系。 </span><br><span class="line"></span><br><span class="line">2.规范文档（Specifications）</span><br><span class="line">由 W3C 写文档（李爵士）</span><br><span class="line">W3C 根据浏览器的实际情况总结文档，并不是凭空想象</span><br><span class="line">直接看很难看懂，全英文的，事无巨细。</span><br><span class="line">3.DOCTYPE</span><br><span class="line">用来选择文档类型</span><br><span class="line">除了 HTML 5 的 DOCTYPE，其他的都 TM 很难记：https://www.w3.org/QA/2002/04/valid-dtd-list.html</span><br><span class="line">如果你没写 DOCTYPE，那你就惨了，会出现一些难以预料的bug。</span><br><span class="line">4.html / head / body </span><br><span class="line">5.省略标签</span><br><span class="line">如果head标签里面没有东西,可以省略;</span><br><span class="line">body标签里是空的或者没有注释,也可以省略;</span><br><span class="line">6.常见标签：a、form、input、button、h1、p、ul、ol、small、strong、div、span、kbd、video、audio、svg</span><br><span class="line">基本上，你知道标签对应单词的意思，就知道这个标签怎么用了（语义化）</span><br><span class="line">出了 div 和 span，其他标签都有默认样式</span><br><span class="line">MDN 上有所有标签的文档</span><br><span class="line">7.如何查看 MDN 文档</span><br><span class="line">Google：关键词 + MDN</span><br><span class="line">切换成中文</span><br><span class="line"></span><br><span class="line">8.iframe 标签</span><br><span class="line">嵌套页面:把一个页面嵌套在另一个页面中。可设置宽高。是可替换元素。</span><br><span class="line"></span><br><span class="line">```&lt;iframe src=```https://www.baidu.com``` name=```xxx```&gt;&lt;/iframe&gt;</span><br><span class="line">&lt;iframe&gt;的name属性与&lt;a&gt;一起用,name与target设置成一个名称。</span><br><span class="line">&lt;iframe&gt; src=```#```:意思在当前页面打开。</span><br><span class="line">src还可以写相对路径,如./index.html</span><br><span class="line">frameborder=```0``` 入伏哦不设置默认有一个3D效果的border.</span><br></pre></td></tr></table></figure></p>
+<p>a href=<figure class="highlight plain"><figcaption><span>```标签被点击后页面锚点变成#,页面滚动到顶部.页面不发起请求但会刷新.</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">```&lt;a href=``````&gt;```link```&lt;/a&gt; ```标签被点击后页面刷新</span><br><span class="line"></span><br><span class="line">a 标签</span><br><span class="line">跳转页面（HTTP GET 请求）</span><br><span class="line">有4个target属性,</span><br><span class="line">_blank 新开打开</span><br><span class="line">_self  自己打开</span><br><span class="line">_parent  爸爸打开</span><br><span class="line">_top  顶级打开</span><br><span class="line"></span><br><span class="line">```&lt;a&gt;```有一个download属性可以用来下载,如果不在标签里面设置,还有一个办法可以设置Content-type:application/octet-stream</span><br><span class="line">如果```&lt;a&gt;```里面href=```qq.com```是不可以的,因为为当成一个文件.一种办法是前面要加协议http://  另一种办法是当前文件时什么协议就用什么协议 ,但是写代码一般不能用file协议,所以一般要预览html文件就要上传到github,用github的预览功能,另一种办法是下载一个小工具:http-server.这个工具帮你做一个node.js server.要进入你要打开的文件目录安装,确保是全局安装.然后运行,最后浏览器访问例如http://localhost:8081/index.html或http://localhost:8081/app.js</span><br><span class="line"></span><br><span class="line">href写相符路径就跳转到这个相对路径.</span><br><span class="line"></span><br><span class="line">在href里面写?name=xxx,浏览器会加在当前网址后面,发起一个get请求.</span><br><span class="line"></span><br><span class="line">```a href=```#```&gt;link&lt;/a&gt;```标签被点击后页面锚点变成#,页面滚动到顶部.页面不发起请求但会刷新.</span><br><span class="line"></span><br><span class="line">javascript:; 伪协议   如果想写一个```&lt;a&gt;```,点击这个```&lt;a&gt;```后不想跳转,可以在href里面写javascript:;</span><br><span class="line">属性见 MDN：https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a</span><br><span class="line"></span><br><span class="line">form 标签</span><br><span class="line">跳转页面（HTTP POST 请求）</span><br><span class="line"></span><br><span class="line">属性见 MDN：https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/form</span><br><span class="line"></span><br><span class="line">```&lt;a&gt;```跳转页面的时候发起的是get请求(获取)</span><br><span class="line">```&lt;form&gt;```跳转页面的时候发起的是一个post请求(上传)</span><br><span class="line"></span><br><span class="line">如果```&lt;form&gt;```里面没有提交按钮,就无法提交,</span><br><span class="line">get会把默认参数(比如用户名密码)放进查询参数里</span><br><span class="line">post会把默认参数放在第四部分</span><br><span class="line">可以让post也放进查询参数但是get无法放进第四部分.</span><br><span class="line"></span><br><span class="line">```&lt;a&gt;```有target,```&lt;form&gt;```也有target,_blank也会新开页面,也能进iframe.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">input / button</span><br><span class="line">区别：是否为「空标签」</span><br><span class="line"></span><br><span class="line">input 的属性见：https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/Input</span><br><span class="line">button 的属性见：https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/button</span><br><span class="line"></span><br><span class="line">```一个&lt;form&gt;里面只写&lt;button&gt;button&lt;button/&gt;,这个button会自动升级为提交按钮.</span><br><span class="line">如果写成&lt;button type=```button```&gt;,就不是submit了;</span><br><span class="line">这个type=submit时,也能提交.</span><br></pre></td></tr></table></figure></p>
 <p>input的id和lable写成一个名字可以关联.这个方法也适用于inup=text和password<br>还有一个便捷的方法是用lable把input包起来.</p>
 <p>table 标签示例<br>用于展示数据</p>
 <p>属性见：<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/table" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/table</a></p>
@@ -118,7 +99,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/24/html知识点/" data-id="cjbkw6ek80000847svvxo7ymz" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/12/24/html知识点/" data-id="cjbkw97da0004ec7s7dq29mk2" class="article-share-link">Compartir</a>
       
       
     </footer>
@@ -129,7 +110,7 @@
   
   
     <a href="/2017/12/14/如何用hexo搭建博客/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Viejo</strong>
       <div class="article-nav-title">如何用hexo搭建博客</div>
     </a>
   
@@ -157,7 +138,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">Nube de Tags</h3>
     <div class="widget tagcloud">
       <a href="/tags/人们一开始都很爱你，但到了某个阶段他们就会开始恨你/" style="font-size: 10px;">人们一开始都很爱你，但到了某个阶段他们就会开始恨你</a>
     </div>
@@ -166,7 +147,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archivos</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul>
     </div>
@@ -176,7 +157,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Posts recientes</h3>
     <div class="widget">
       <ul>
         
@@ -209,7 +190,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 Zhao Xin<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Construido por <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
